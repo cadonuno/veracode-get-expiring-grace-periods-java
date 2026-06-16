@@ -37,10 +37,15 @@ public class GetExpiringGracePeriods {
                     System.out.println("      Severity: " + severity);
                     System.out.println("      First Found Date: " + firstFoundDate);
                     System.out.println("      Grace Period: " + gracePeriod);
+                    useFindingInformation(finding, gracePeriod)
                 }
             }
         }
 
+    }
+
+    private static void useFindingInformation(Finding finding, GracePeriodWindow gracePeriod) {
+        //TODO: implement your functionality here
     }
 
     private static int getLowestSeverityWithGracePeriod(PolicyInfo policyInfo) {
