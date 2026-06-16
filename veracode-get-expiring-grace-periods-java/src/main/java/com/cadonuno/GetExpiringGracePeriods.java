@@ -15,8 +15,8 @@ public class GetExpiringGracePeriods {
     public static final List<Integer> DAYS_IN_ADVANCE_TO_WARN = List.of(7, 3, 1);
 
     public static void run() {
-        List<AppInfo> applications = VeracodeApiApplication.getApplicationsByName("Test%20-%20Grace%20Periods%202");
-        //List<AppInfo> applications = VeracodeApiApplication.getAllApplications();
+        //List<AppInfo> applications = VeracodeApiApplication.getApplicationsByName("Test%20-%20Grace%20Periods%202");
+        List<AppInfo> applications = VeracodeApiApplication.getAllApplications();
         for (AppInfo appInfo : applications) {
             PolicyInfo policyInfo = appInfo.getPolicyInfo();
             if (policyInfo == null) {
